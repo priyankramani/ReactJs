@@ -8,7 +8,13 @@ function App() {
   let [counter, setCounter] = useState(15);
   const addValue = () => {
     // counter++;
-    setCounter(counter++);
+    // setCounter(counter++);
+
+    // What if....15->19
+    setCounter(prevCounter => prevCounter+1);
+    setCounter(prevCounter => prevCounter+1);
+    setCounter(prevCounter => prevCounter+1);
+    setCounter(prevCounter => prevCounter+1);
   }
   const removeValue = () => {
     // counter--;
